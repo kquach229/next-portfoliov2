@@ -41,7 +41,7 @@ export const projects = [
     description: 'Starter Homepage Template design for SAAS products.',
     date: '05-15-2024',
     technologiesUsed: ['next', 'framer-motion', 'javascript', 'tailwind'],
-    link: 'https://quadterminal.com/platform/dashboard',
+    link: 'https://seo-lab.vercel.app/',
   },
   {
     id: 5,
@@ -61,7 +61,7 @@ export const projects = [
       'Your Personal Plant Care Companion. Track progress and maintain your plants - whether at home or at your business.',
     date: '01-06-2024',
     technologiesUsed: ['next', 'material-ui', 'typescript', 'tailwind'],
-    link: 'https://movie-database-gamma-seven.vercel.app/',
+    link: 'https://plantwise-landing.vercel.app/',
   },
   {
     id: 7,
@@ -80,6 +80,6 @@ export const projects = [
       'Explore the wonders of your favorite pokemon species with this fully responsive pokedesk.',
     date: '02-03-2024',
     technologiesUsed: ['next', 'tailwind', 'typescript', 'material-ui'],
-    link: 'https://kennyquach.vercel.app/',
+    link: 'https://pokedesk-ten.vercel.app/',
   },
 ];
