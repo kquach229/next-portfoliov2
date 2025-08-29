@@ -111,11 +111,11 @@ const ThreeJsContainer = ({ filePath }: { filePath: string }) => {
       }
       renderer.dispose();
     };
-  }, [filePath]);
+  }, []);
 
   // comment
   return (
-    <div className='relative w-full h-screen'>
+    <div className='relative w-full h-screen overflow-hidden'>
       {loading && (
         <div className='absolute inset-0 flex items-center justify-center bg-background'>
           <Loading />

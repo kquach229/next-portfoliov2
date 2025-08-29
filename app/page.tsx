@@ -7,7 +7,7 @@ import Navbar from '@/components/Navbar';
 
 export default function Home() {
   return (
-    <div>
+    <div className='overflow-hidden'>
       <ThreeJsContainer filePath={'/mobile_home.glb'} />
 
       <div className='absolute top-[70%] right-[10%]'>
