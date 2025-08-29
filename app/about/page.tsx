@@ -36,13 +36,13 @@ const AboutPage = () => {
                   width={300}
                 />
 
-                <div className='flex items-center gap-2'>
+                <div className='flex items-center gap-3'>
                   {project.technologiesUsed?.map((technology) => (
                     <Image
                       key={technology}
                       src={`/${technology}.svg`}
-                      width={20}
-                      height={20}
+                      width={35}
+                      height={35}
                       alt={technology}
                     />
                   ))}
