@@ -3,6 +3,7 @@ import ThreeJsContainer from '../components/ThreeJsContainer';
 import ReusableLink from '@/components/ReusableLink';
 import { Suspense } from 'react';
 import ReusableCard from '@/components/ReusableCard';
+import Navbar from '@/components/Navbar';
 
 export default function Home() {
   return (

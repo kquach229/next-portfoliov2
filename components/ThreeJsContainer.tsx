@@ -111,7 +111,7 @@ const ThreeJsContainer = ({ filePath }: { filePath: string }) => {
       }
       renderer.dispose();
     };
-  }, []);
+  }, [filePath]);
 
   // comment
   return (
