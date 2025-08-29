@@ -7,7 +7,7 @@ import ReusableCard from '@/components/ReusableCard';
 export default function Home() {
   return (
     <div>
-      <ThreeJsContainer filePath={'mobile_home.glb'} />
+      <ThreeJsContainer filePath={'./mobile_home.glb'} />
 
       <div className='absolute top-[70%] right-[10%]'>
         <ReusableCard>
