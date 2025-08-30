@@ -9,7 +9,7 @@ const ReusableCard = ({
 }) => {
   return (
     <div style={styles ?? {}} className='bg-mysterious-green/30 rounded-sm'>
-      <div className='p-5 mx-auto'>{children}</div>
+      <div className='p-5 h-[100%] mx-auto'>{children}</div>
     </div>
   );
 };
