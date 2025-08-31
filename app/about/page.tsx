@@ -13,26 +13,44 @@ const AboutPage = () => {
   ];
   return (
     <div className='w-full'>
-      <div className='flex flex-col justify-center items-center space-y-5 min-h-screen'>
-        <div className='text-6xl font-extrabold'>KENNY QUACH</div>
-        <span>Fullstack Engineer</span>
-        <span className='max-w-[80ch] text-center'>
-          Since 2018, I've enjoyed turning designs into fullstack solutions
-          while maintaing code quality and performance.
-        </span>
+      <div className='flex flex-col md:flex-row justify-around items-center min-h-screen'>
+        <div className='w-[100%] md:w-1/4'>
+          <Image
+            src='/profile.webp'
+            alt='image'
+            width={500}
+            height={500}
+            className='rounded-md w-[100%] h-auto'
+            objectFit='contain'
+          />
+        </div>
+        <div className='space-y-10 mt-20 md:mt-0 w-[100%] md:w-1/2'>
+          <div className='text-6xl font-extrabold'>I'm KENNY QUACH</div>
+          <div className='space-y-2'>
+            <div className='text-xl'>Fullstack Engineer</div>
+            <div className='max-w-[70ch]'>
+              Since 2018, I've enjoyed turning designs into fullstack solutions
+              while maintaing code quality and performance.
+            </div>
+          </div>
+        </div>
       </div>
-      <div>
+      <div className='mt-20'>
         <div className='text-3xl tracking-tighter'>Some of My Work</div>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5'>
           {projects.map((project) => (
             <ReusableCard key={project.id}>
               <div className='flex flex-col gap-5 justify-between h-full w-full'>
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  height={800}
-                  width={300}
-                />
+                <div className='rounded-md w-full'>
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    height={500}
+                    width={500}
+                    objectFit='contain'
+                    className='w-[500px] h-[300px]'
+                  />
+                </div>
 
                 <div className='flex items-center gap-3'>
                   {project.technologiesUsed?.map((technology) => (
