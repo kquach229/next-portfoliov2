@@ -13,28 +13,34 @@ const AboutPage = () => {
   ];
   return (
     <div className='w-full'>
-      <div className='flex flex-col-reverse md:flex-row justify-around items-center min-h-screen gap-10 mb-28'>
-        <div className='w-[100%] h-auto md:w-1/2 lg:w-1/5'>
-          <Image
-            src='/profile.webp'
-            alt='image'
-            width={500}
-            height={500}
-            className='rounded-md w-[100%] h-auto object-cover'
-          />
-        </div>
-        <div className='space-y-10 mt-5 md:mt-0 w-[100%] md:w-1/2'>
-          <div className='text-6xl font-extrabold'>I'm KENNY QUACH</div>
-          <div className='space-y-2'>
-            <div className='text-xl'>Fullstack Engineer</div>
-            <div className='max-w-[70ch]'>
-              Since 2018, I've enjoyed turning designs into fullstack solutions
-              while maintaing code quality and performance.
+      <div className='min-h-screen'>
+        <div className='flex flex-col-reverse md:flex-row justify-around items-center min-h-screen gap-10'>
+          <div className='w-[100%] h-auto md:w-1/2 lg:w-1/5'>
+            <Image
+              src='/profile.webp'
+              alt='image'
+              width={500}
+              height={500}
+              className='rounded-md w-[100%] h-auto object-cover'
+            />
+          </div>
+          <div className='space-y-10 mt-5 md:mt-0 w-[100%] md:w-1/2'>
+            <div className='text-6xl font-extrabold'>I'm KENNY QUACH</div>
+            <div className='space-y-2'>
+              <div className='text-xl'>Fullstack Engineer</div>
+              <div className='max-w-[70ch]'>
+                Since 2018, I've enjoyed turning designs into fullstack
+                solutions while maintaing code quality and performance.
+              </div>
+              <div className='mt-10'>
+                <ReusableLink title='See Projects' path='/about/#work' />
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div className='mt-20'>
+
+      <div id='work' className='mt-20'>
         <div className='text-3xl tracking-tighter'>Some of My Work</div>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5'>
           {projects.map((project) => (
@@ -47,7 +53,7 @@ const AboutPage = () => {
                     height={500}
                     width={500}
                     objectFit='cover'
-                    className='w-[500px] h-[300px] object-cover'
+                    className='w-[100%] h-[300px] object-cover'
                   />
                 </div>
 
