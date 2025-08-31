@@ -13,8 +13,8 @@ const AboutPage = () => {
   ];
   return (
     <div className='w-full'>
-      <div className='flex flex-col md:flex-row justify-around items-center min-h-screen'>
-        <div className='w-[100%] md:w-1/4'>
+      <div className='flex flex-col-reverse md:flex-row justify-around items-center min-h-screen gap-10 mb-28'>
+        <div className='w-[100%] h-auto md:w-1/2 lg:w-1/5'>
           <Image
             src='/profile.webp'
             alt='image'
@@ -24,7 +24,7 @@ const AboutPage = () => {
             objectFit='contain'
           />
         </div>
-        <div className='space-y-10 mt-20 md:mt-0 w-[100%] md:w-1/2'>
+        <div className='space-y-10 mt-5 md:mt-0 w-[100%] md:w-1/2'>
           <div className='text-6xl font-extrabold'>I'm KENNY QUACH</div>
           <div className='space-y-2'>
             <div className='text-xl'>Fullstack Engineer</div>
