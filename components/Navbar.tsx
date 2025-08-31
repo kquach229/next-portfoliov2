@@ -7,10 +7,9 @@ import React from 'react';
 const links = [
   { id: 1, title: 'home', link: '/' },
   { id: 2, title: 'about', link: '/about' },
-  { id: 3, title: 'expertise', link: '/expertise' },
+  { id: 3, title: 'experience', link: '/experience' },
   { id: 4, title: 'work', link: '/work' },
-  { id: 5, title: 'experience', link: '/experience' },
-  { id: 6, title: 'contact', link: '/contact' },
+  { id: 5, title: 'contact', link: '/contact' },
 ];
 
 const Navbar = () => {

@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={`${roboto.className} antialiased overflow-x-hidden`}>
         <Navbar />
-        <div className='p-5 max-w-[1800px] mx-auto'>{children}</div>
+        <div className='p-5 max-w-[1500px] mx-auto'>{children}</div>
       </body>
     </html>
   );
