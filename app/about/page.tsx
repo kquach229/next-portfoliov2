@@ -20,8 +20,7 @@ const AboutPage = () => {
             alt='image'
             width={500}
             height={500}
-            className='rounded-md w-[100%] h-auto'
-            objectFit='contain'
+            className='rounded-md w-[100%] h-auto object-cover'
           />
         </div>
         <div className='space-y-10 mt-5 md:mt-0 w-[100%] md:w-1/2'>
@@ -47,8 +46,8 @@ const AboutPage = () => {
                     alt={project.title}
                     height={500}
                     width={500}
-                    objectFit='contain'
-                    className='w-[500px] h-[300px]'
+                    objectFit='cover'
+                    className='w-[500px] h-[300px] object-cover'
                   />
                 </div>
 
