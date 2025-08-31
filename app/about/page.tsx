@@ -5,6 +5,17 @@ import { projects } from '../utils/data';
 import Link from 'next/link';
 import Image from 'next/image';
 import ReusableLink from '@/components/ReusableLink';
+import {
+  Code,
+  GithubIcon,
+  Linkedin,
+  LinkedinIcon,
+  LinkIcon,
+  LocateIcon,
+  LucideLinkedin,
+  Map,
+  MapPin,
+} from 'lucide-react';
 
 const AboutPage = () => {
   const expertise = [
@@ -18,6 +29,9 @@ const AboutPage = () => {
           <div className='w-[100%] h-auto md:w-1/2 lg:w-1/5'>
             <Image
               src='/profile.webp'
+              priority
+              placeholder='blur'
+              blurDataURL='/blurred-profile.png'
               alt='image'
               width={500}
               height={500}
@@ -29,18 +43,38 @@ const AboutPage = () => {
             <div className='space-y-2'>
               <div className='text-xl'>Fullstack Engineer</div>
               <div className='max-w-[70ch]'>
-                Since 2018, I've enjoyed turning designs into fullstack
-                solutions while maintaing code quality and performance.
+                I've enjoyed turning designs into fullstack solutions while
+                maintaing code quality and performance.
               </div>
+              <ReusableCard>
+                <div className='flex flex-col space-y-2'>
+                  <span className='inline-flex gap-2'>
+                    <MapPin /> Based in NYC Metropolitan Area
+                  </span>
+                  <span className='inline-flex gap-2'>
+                    <Code /> 5+ Years of Experience
+                  </span>
+                  <span className='inline-flex gap-5'>
+                    <Link
+                      href='https://www.linkedin.com/in/kennyquach/'
+                      target='_blank'>
+                      <LucideLinkedin />
+                    </Link>
+                    <Link href='https://github.com/kquach229' target='_blank'>
+                      <GithubIcon />
+                    </Link>
+                  </span>
+                </div>
+              </ReusableCard>
               <div className='mt-10'>
-                <ReusableLink title='See Projects' path='/about/#work' />
+                <ReusableLink title='See Projects' path='/about/#projects' />
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div id='work' className='mt-20'>
+      <div id='projects' className='mt-20'>
         <div className='text-3xl tracking-tighter'>Some of My Work</div>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5'>
           {projects.map((project) => (
