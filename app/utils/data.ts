@@ -108,7 +108,7 @@ export const expertiseAndSkills = [
     technologies: [
       'Nodejs',
       'Express',
-      'Postgres',
+      'PostgreSQL',
       'Restful APIs',
       'Prisma ORM',
     ],
