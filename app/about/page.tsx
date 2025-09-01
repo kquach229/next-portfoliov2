@@ -86,7 +86,9 @@ const AboutPage = () => {
         <div className='text-3xl tracking-tighter mb-5'>Skills & Expertise</div>
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3'>
           {expertiseAndSkills.map((skill) => (
-            <div className='border border-mysterious-green space-y-5 p-5'>
+            <div
+              key={skill.title}
+              className='border border-mysterious-green space-y-5 p-5'>
               <div>{renderSkillTitleIcon(skill.title)}</div>
               <div className='text-2xl font-extrabold inline-flex text-center'>
                 {skill.title}
