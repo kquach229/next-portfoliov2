@@ -1,27 +1,34 @@
 import React from 'react';
 import motion from 'motion/react';
 import ReusableCard from '@/components/ReusableCard';
-import { projects } from '../utils/data';
+import { expertiseAndSkills, projects } from '../utils/data';
 import Link from 'next/link';
 import Image from 'next/image';
 import ReusableLink from '@/components/ReusableLink';
 import {
+  BrainCogIcon,
   Code,
+  ComputerIcon,
   GithubIcon,
-  Linkedin,
-  LinkedinIcon,
-  LinkIcon,
-  LocateIcon,
   LucideLinkedin,
-  Map,
   MapPin,
+  ServerIcon,
 } from 'lucide-react';
 
+const renderSkillTitleIcon = (title: string) => {
+  switch (title) {
+    case 'Frontend Dev':
+      return <ComputerIcon />;
+    case 'Backend Dev':
+      return <ServerIcon />;
+    case 'Infrastructure & AI':
+      return <BrainCogIcon />;
+    default:
+      return null;
+  }
+};
+
 const AboutPage = () => {
-  const expertise = [
-    { id: 1, title: 'Frontend', technologies: ['React/Next.js', ''] },
-    { id: 2, title: 'Backend', technologies: [] },
-  ];
   return (
     <div className='w-full'>
       <div className='min-h-screen'>
@@ -44,7 +51,8 @@ const AboutPage = () => {
               <div className='text-xl'>Fullstack Engineer</div>
               <div className='max-w-[70ch]'>
                 I've enjoyed turning designs into fullstack solutions while
-                maintaing code quality and performance.
+                maintaing code quality and performance. Recently, I have been
+                diving deep into AI tools.
               </div>
               <ReusableCard>
                 <div className='flex flex-col space-y-2'>
@@ -71,6 +79,27 @@ const AboutPage = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div id='expertise'>
+        <div className='text-3xl tracking-tighter mb-5'>Skills & Expertise</div>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3'>
+          {expertiseAndSkills.map((skill) => (
+            <div className='border border-mysterious-green space-y-5 p-5'>
+              <div>{renderSkillTitleIcon(skill.title)}</div>
+              <div className='text-2xl font-extrabold inline-flex text-center'>
+                {skill.title}
+              </div>
+              <div>{skill.description}</div>
+
+              <div>
+                {skill.technologies.map((technology) => (
+                  <div>{`{${technology}}`}</div>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
 

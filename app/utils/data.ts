@@ -83,3 +83,45 @@ export const projects = [
     link: 'https://pokedesk-ten.vercel.app/',
   },
 ];
+
+export const expertiseAndSkills = [
+  {
+    title: 'Frontend Dev',
+    description:
+      'Experienced in modern Frontend Technologies to drive beautiful, seamless, and responsive user experiences.',
+    technologies: [
+      'HTML',
+      'CSS',
+      'JavaScript/TypeScript',
+      'React/Nextjs',
+      'React Native',
+      'Shadcn UI',
+      'Tailwind CSS',
+      'Jest',
+    ],
+  },
+  {
+    title: 'Backend Dev',
+    description:
+      'Worked extensively with backend APIs and services to facilitate data and services.',
+    technologies: [
+      'Nodejs',
+      'Express',
+      'Postgres',
+      'Restful APIs',
+      'Prisma ORM',
+    ],
+  },
+  {
+    title: 'Infrastructure & AI',
+    description:
+      'Utilized infrastructure tools throughout career to handle scaling and deployment.',
+    technologies: [
+      'Docker',
+      'ChatGPT API',
+      'Google Gemini API',
+      'Vercel',
+      'Heroku',
+    ],
+  },
+];
