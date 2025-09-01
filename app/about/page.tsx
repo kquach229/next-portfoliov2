@@ -75,14 +75,14 @@ const AboutPage = () => {
                 </div>
               </ReusableCard>
               <div className='mt-10'>
-                <ReusableLink title='See Projects' path='/about/#projects' />
+                <ReusableLink title='See Projects' path='/about/#expertise' />
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div id='expertise'>
+      <div className='mt-20' id='expertise'>
         <div className='text-3xl tracking-tighter mb-5'>Skills & Expertise</div>
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3'>
           {expertiseAndSkills.map((skill) => (
