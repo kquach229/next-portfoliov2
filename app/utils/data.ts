@@ -95,6 +95,7 @@ export const expertiseAndSkills = [
       'JavaScript/TypeScript',
       'React/Nextjs',
       'React Native',
+      'Zustand/Redux',
       'Shadcn UI',
       'Tailwind CSS',
       'Jest',
@@ -118,6 +119,7 @@ export const expertiseAndSkills = [
       'Utilized infrastructure tools throughout career to handle scaling and deployment.',
     technologies: [
       'Docker',
+      'Terraform',
       'ChatGPT API',
       'Google Gemini API',
       'Vercel',
