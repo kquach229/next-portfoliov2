@@ -2,7 +2,7 @@ import React from 'react';
 
 const ReusableBage = ({ title, styles }) => {
   return (
-    <div style={{ styles }} className={`bg-mysterious-green p-5`}>
+    <div style={styles} className={`bg-mysterious-green rounded-lg p-1`}>
       {title}
     </div>
   );

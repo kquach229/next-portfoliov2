@@ -1,7 +1,7 @@
 import React from 'react';
 import motion from 'motion/react';
 import ReusableCard from '@/components/ReusableCard';
-import { expertiseAndSkills, projects } from '../utils/data';
+import { expertiseAndSkills, projects, workExperience } from '../utils/data';
 import Link from 'next/link';
 import Image from 'next/image';
 import ReusableLink from '@/components/ReusableLink';
@@ -14,6 +14,7 @@ import {
   MapPin,
   ServerIcon,
 } from 'lucide-react';
+import ReusableBage from '@/components/ReusableBage';
 
 const renderSkillTitleIcon = (title: string) => {
   switch (title) {
@@ -149,6 +150,33 @@ const AboutPage = () => {
                 />
               </div>
             </ReusableCard>
+          ))}
+        </div>
+      </div>
+
+      <div id='experience' className='mt-20'>
+        <div className='text-3xl tracking-tighter mb-5'>Experience</div>
+        <div className='flex flex-col gap-16'>
+          {workExperience.map((experience) => (
+            <div className='flex gap-20'>
+              <span className='text-mysterious-green'>{experience.date}</span>
+              <div className='space-y-2'>
+                <div className='font-bold'>
+                  {experience.title} - {experience.companyName}
+                </div>
+                <div className='text-sm text-foreground/70'>
+                  {experience.description}
+                </div>
+                <div className='flex gap-2 text-sm'>
+                  {experience.tools.map((tool) => (
+                    <ReusableBage
+                      styles={{ fontSize: '0.8rem' }}
+                      title={tool}
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
           ))}
         </div>
       </div>

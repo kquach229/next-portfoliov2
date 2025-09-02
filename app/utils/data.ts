@@ -127,3 +127,42 @@ export const expertiseAndSkills = [
     ],
   },
 ];
+
+export const workExperience = [
+  {
+    companyName: 'ValidateLens',
+    title: 'Senior Frontend Engineer',
+    description:
+      'Built this and that Built this and that Built this and that Built this and that',
+    date: '2025-Present',
+    tools: ['JavaScript', 'TypeScript', 'React', 'Tailwind'],
+  },
+  {
+    companyName: 'ValidateLens',
+    title: 'Senior Frontend Engineer',
+    description: 'Built this and that',
+    date: '2025-Present',
+    tools: ['JavaScript', 'TypeScript', 'React', 'Tailwind'],
+  },
+  {
+    companyName: 'ValidateLens',
+    title: 'Senior Frontend Engineer',
+    description: 'Built this and that',
+    date: '2025-Present',
+    tools: ['JavaScript', 'TypeScript', 'React', 'Tailwind'],
+  },
+  {
+    companyName: 'ValidateLens',
+    title: 'Senior Frontend Engineer',
+    description: 'Built this and that',
+    date: '2025-Present',
+    tools: ['JavaScript', 'TypeScript', 'React', 'Tailwind'],
+  },
+  {
+    companyName: 'ValidateLens',
+    title: 'Senior Frontend Engineer',
+    description: 'Built this and that',
+    date: '2025-Present',
+    tools: ['JavaScript', 'TypeScript', 'React', 'Tailwind'],
+  },
+];
