@@ -1,6 +1,11 @@
 import React from 'react';
 
-const ReusableBage = ({ title, styles }) => {
+interface IReusableBadge {
+  title: string;
+  styles?: React.CSSProperties;
+}
+
+const ReusableBage = ({ title, styles }: IReusableBadge) => {
   return (
     <div style={styles} className={`bg-mysterious-green rounded-lg p-1`}>
       {title}
