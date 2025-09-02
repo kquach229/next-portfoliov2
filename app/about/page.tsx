@@ -107,7 +107,7 @@ const AboutPage = () => {
       </div>
 
       <div id='projects' className='mt-20'>
-        <div className='text-3xl tracking-tighter'>Some of My Work</div>
+        <div className='text-3xl tracking-tighter mb-5'>Some of My Work</div>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5'>
           {projects.map((project) => (
             <ReusableCard key={project.id}>
