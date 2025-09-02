@@ -21,8 +21,8 @@ const CopyEmailButton = () => {
         onClick={handleClickCopyEmail}>
         Copy Email
       </button>
-      <div className='h-16 w-16 text-center'>
-        {message && <div className='text-center mx-auto'>{message}</div>}
+      <div className='h-8 text-center w-full'>
+        {message && <div className='text-center mx-auto w-full'>{message}</div>}
       </div>
     </div>
   );

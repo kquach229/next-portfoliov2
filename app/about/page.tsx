@@ -34,7 +34,7 @@ const AboutPage = () => {
   return (
     <div className='w-full'>
       <div id='intro' className='min-h-screen'>
-        <div className='flex flex-col-reverse md:flex-row justify-around items-center min-h-screen gap-10'>
+        <div className='flex flex-col-reverse md:flex-row justify-around items-center min-h-screen gap-10 mt-20 md:mt-0'>
           <div className='w-[100%] h-auto md:w-1/2 lg:w-1/5'>
             <Image
               src='/profile.webp'
@@ -215,9 +215,9 @@ const AboutPage = () => {
                 </div>
               </div>
 
-              <div>
+              <div className='space-y-2'>
                 <div>My Links</div>
-                <div className='flex flex-row gap-5'>
+                <div className='flex flex-row gap-10'>
                   <Link
                     href='https://www.linkedin.com/in/kennyquach/'
                     target='_blank'>

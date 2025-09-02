@@ -3,6 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useScrollSpy } from './ScrollSpyPrivider';
+import { useState } from 'react';
+import { Menu, X } from 'lucide-react';
 
 const links = [
   { id: 1, title: 'home', link: '/' },
@@ -16,14 +18,17 @@ const links = [
 const Navbar = () => {
   const pathname = usePathname();
   const { activeSection } = useScrollSpy();
+  const [open, setOpen] = useState(false);
 
-  if (pathname == '/') return null;
+  if (pathname === '/') return null;
 
   return (
-    <div className='p-5 bg-background w-[100vw] '>
-      <div className='flex items-center justify-between z-50'>
-        <Image src={'/kq-logo.png'} width={80} height={80} alt='logo' />
-        <div className='space-x-5 flex'>
+    <nav className='p-5 bg-background w-full fixed top-0 left-0 z-50 shadow-sm'>
+      <div className='flex items-center justify-between'>
+        <Image src='/kq-logo.png' width={60} height={60} alt='logo' />
+
+        {/* Desktop links */}
+        <div className='hidden md:flex space-x-6'>
           {links.map((link) => {
             const [base, hash] = link.link.split('#');
             const isActive =
@@ -33,19 +38,54 @@ const Navbar = () => {
             return (
               <Link
                 key={link.id}
-                className={`text-right relative h-[1rem] ${
-                  isActive ? 'text-mysterious-green font-extrabold' : ''
+                className={`relative text-sm transition-colors ${
+                  isActive
+                    ? 'text-mysterious-green font-extrabold'
+                    : 'text-foreground hover:text-mysterious-green'
                 }`}
                 href={link.link}>
-                <div className='text-xs'>0{link.id}</div>
-                <span className=''>{`{${link.title}}`}</span>
+                <span className='block text-xs'>0{link.id}</span>
+                <span>{`{${link.title}}`}</span>
               </Link>
             );
           })}
         </div>
-        <div className='' />
+
+        {/* Mobile hamburger */}
+        <button
+          className='md:hidden p-2 rounded focus:outline-none'
+          onClick={() => setOpen(!open)}>
+          {open ? <X size={24} /> : <Menu size={24} />}
+        </button>
       </div>
-    </div>
+
+      {/* Mobile menu */}
+      {open && (
+        <div className='md:hidden mt-4 flex flex-col space-y-4'>
+          {links.map((link) => {
+            const [base, hash] = link.link.split('#');
+            const isActive =
+              pathname === base &&
+              (hash ? activeSection === hash : activeSection === '');
+
+            return (
+              <Link
+                key={link.id}
+                href={link.link}
+                className={`text-base ${
+                  isActive
+                    ? 'text-mysterious-green font-extrabold'
+                    : 'text-foreground hover:text-mysterious-green'
+                }`}
+                onClick={() => setOpen(false)} // close menu on click
+              >
+                {`{${link.title}}`}
+              </Link>
+            );
+          })}
+        </div>
+      )}
+    </nav>
   );
 };
 
