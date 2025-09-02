@@ -27,7 +27,7 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className='space-y-4 max-w-5xl'>
-      <div className='text-xl font-extrabold text-foreground/50'>
+      <div className='text-xl tracking-tighter font-extrabold text-foreground/50'>
         Let's Work Together
       </div>
       <input

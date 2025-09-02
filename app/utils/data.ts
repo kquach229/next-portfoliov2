@@ -111,6 +111,7 @@ export const expertiseAndSkills = [
       'PostgreSQL',
       'Restful APIs',
       'Prisma ORM',
+      'Python',
     ],
   },
   {

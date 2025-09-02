@@ -162,7 +162,7 @@ const AboutPage = () => {
             <div
               key={experience.companyName}
               className='flex flex-col md:flex-row md:gap-20'>
-              <span className='text-mysterious-green min-w-[12rem]'>
+              <span className='text-mysterious-green min-w-[12rem] font-semibold'>
                 {experience.date}
               </span>
               <div className='space-y-2'>
@@ -172,7 +172,7 @@ const AboutPage = () => {
                 <div className='text-sm text-foreground/70'>
                   {experience.description}
                 </div>
-                <div className='flex gap-2 text-sm'>
+                <div className='flex gap-2 text-sm flex-wrap'>
                   {experience.tools.map((tool) => (
                     <ReusableBage
                       key={tool}
