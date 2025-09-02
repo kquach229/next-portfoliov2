@@ -164,7 +164,9 @@ const AboutPage = () => {
         <div className='text-3xl tracking-tighter mb-5'>Experience</div>
         <div className='flex flex-col gap-16'>
           {workExperience.map((experience) => (
-            <div key={experience.companyName} className='flex gap-20'>
+            <div
+              key={experience.companyName}
+              className='flex flex-col md:flex-row md:gap-20'>
               <span className='text-mysterious-green min-w-[12rem]'>
                 {experience.date}
               </span>
