@@ -15,7 +15,6 @@ import {
 } from 'lucide-react';
 import ReusableBage from '@/components/ReusableBage';
 import ContactForm from '@/components/ContactForm';
-import ReusableButton from '@/components/ReusableButton';
 import CopyEmailButton from '@/components/CopyEmailButton';
 
 const renderSkillTitleIcon = (title: string) => {
@@ -29,10 +28,6 @@ const renderSkillTitleIcon = (title: string) => {
     default:
       return null;
   }
-};
-
-const handleClickCopyEmail = () => {
-  navigator.clipboard.writeText('kquach229@gmail.com');
 };
 
 const AboutPage = () => {
@@ -195,9 +190,45 @@ const AboutPage = () => {
       <div id='contact' className='mt-20 mb-20'>
         <div className='text-3xl tracking-tighter mb-5'>Contact</div>
 
-        <div className='flex flex-col sm:flex-row justify-between items-center gap-12 w-full'>
-          <div className='mx-auto'>
+        <div className='flex flex-col sm:flex-row sm:justify-between gap-12 w-full'>
+          <div className='mx-auto w-full sm:w-1/2'>
             <ContactForm />
+          </div>
+          <div className='w-full sm:w-1/2'>
+            <ReusableCard styles={{ width: '100%' }}>
+              <div className='flex flex-col space-y-5 w-full'>
+                <div className='text-xl font-semibold'>
+                  Other Ways to Get In Touch
+                </div>
+                <div className='flex flex-col gap-5'>
+                  <div>Get A Copy of My Resume</div>
+                  <ReusableLink
+                    title='Download Resume'
+                    path='/resume.pdf'
+                    download
+                  />
+                </div>
+
+                <div className='flex flex-col gap-5'>
+                  <div>Copy Email Address</div>
+                  <CopyEmailButton />
+                </div>
+              </div>
+
+              <div>
+                <div>My Links</div>
+                <div className='flex flex-row gap-5'>
+                  <Link
+                    href='https://www.linkedin.com/in/kennyquach/'
+                    target='_blank'>
+                    Linkedin
+                  </Link>
+                  <Link href='https://github.com/kquach229' target='_blank'>
+                    Github
+                  </Link>
+                </div>
+              </div>
+            </ReusableCard>
           </div>
         </div>
       </div>

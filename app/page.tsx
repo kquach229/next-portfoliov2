@@ -7,6 +7,7 @@ export default function Home() {
   return (
     <div id='home' className='relative h-screen w-full overflow-hidden'>
       {/* Background 3D model */}
+
       <ThreeJsContainer filePath='/animated_ancient_dragon.glb' />
 
       {/* Overlay Content */}
