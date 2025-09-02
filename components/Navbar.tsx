@@ -53,7 +53,7 @@ const Navbar = () => {
 
         {/* Mobile hamburger */}
         <button
-          className='md:hidden p-2 rounded focus:outline-none'
+          className='md:hidden p-2 rounded focus:outline-none hover:cursor-pointer'
           onClick={() => setOpen(!open)}>
           {open ? <X size={24} /> : <Menu size={24} />}
         </button>
