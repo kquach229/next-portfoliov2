@@ -33,7 +33,7 @@ export default function ContactForm() {
       <input
         type='text'
         placeholder='Name'
-        className='w-full border p-2 rounded'
+        className='w-full border border-mysterious-green p-2 rounded focus:outline-none'
         value={form.name}
         onChange={(e) => setForm({ ...form, name: e.target.value })}
         required
@@ -41,14 +41,14 @@ export default function ContactForm() {
       <input
         type='email'
         placeholder='Email'
-        className='w-full border p-2 rounded'
+        className='w-full border border-mysterious-green p-2 rounded focus:outline-none'
         value={form.email}
         onChange={(e) => setForm({ ...form, email: e.target.value })}
         required
       />
       <textarea
         placeholder='Message'
-        className='w-full border p-2 rounded'
+        className='w-full border border-mysterious-green p-2 rounded focus:outline-none'
         rows={5}
         value={form.message}
         onChange={(e) => setForm({ ...form, message: e.target.value })}
