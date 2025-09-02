@@ -1,5 +1,4 @@
 import React from 'react';
-import motion from 'motion/react';
 import ReusableCard from '@/components/ReusableCard';
 import { expertiseAndSkills, projects, workExperience } from '../utils/data';
 import Link from 'next/link';
@@ -15,6 +14,9 @@ import {
   ServerIcon,
 } from 'lucide-react';
 import ReusableBage from '@/components/ReusableBage';
+import ContactForm from '@/components/ContactForm';
+import ReusableButton from '@/components/ReusableButton';
+import CopyEmailButton from '@/components/CopyEmailButton';
 
 const renderSkillTitleIcon = (title: string) => {
   switch (title) {
@@ -29,10 +31,14 @@ const renderSkillTitleIcon = (title: string) => {
   }
 };
 
+const handleClickCopyEmail = () => {
+  navigator.clipboard.writeText('kquach229@gmail.com');
+};
+
 const AboutPage = () => {
   return (
     <div className='w-full'>
-      <div className='min-h-screen'>
+      <div id='intro' className='min-h-screen'>
         <div className='flex flex-col-reverse md:flex-row justify-around items-center min-h-screen gap-10'>
           <div className='w-[100%] h-auto md:w-1/2 lg:w-1/5'>
             <Image
@@ -98,7 +104,7 @@ const AboutPage = () => {
 
               <div>
                 {skill.technologies.map((technology) => (
-                  <div>{`{${technology}}`}</div>
+                  <div key={technology}>{`{${technology}}`}</div>
                 ))}
               </div>
             </div>
@@ -154,11 +160,11 @@ const AboutPage = () => {
         </div>
       </div>
 
-      <div id='experience' className='mt-20'>
+      <div id='experience' className='mt-20 mb-20'>
         <div className='text-3xl tracking-tighter mb-5'>Experience</div>
         <div className='flex flex-col gap-16'>
           {workExperience.map((experience) => (
-            <div className='flex gap-20'>
+            <div key={experience.companyName} className='flex gap-20'>
               <span className='text-mysterious-green min-w-[12rem]'>
                 {experience.date}
               </span>
@@ -172,6 +178,7 @@ const AboutPage = () => {
                 <div className='flex gap-2 text-sm'>
                   {experience.tools.map((tool) => (
                     <ReusableBage
+                      key={tool}
                       styles={{ fontSize: '0.8rem' }}
                       title={tool}
                     />
@@ -180,6 +187,16 @@ const AboutPage = () => {
               </div>
             </div>
           ))}
+        </div>
+      </div>
+
+      <div id='contact' className='mt-20 mb-20'>
+        <div className='text-3xl tracking-tighter mb-5'>Contact</div>
+
+        <div className='flex flex-col sm:flex-row justify-between items-center gap-12 w-full'>
+          <div className='mx-auto'>
+            <ContactForm />
+          </div>
         </div>
       </div>
     </div>

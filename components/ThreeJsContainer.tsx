@@ -18,12 +18,12 @@ const ThreeJsContainer = ({ filePath }: { filePath: string }) => {
 
     // Camera
     const camera = new THREE.PerspectiveCamera(
-      25,
+      80,
       window.innerWidth / window.innerHeight,
       0.1,
       1000
     );
-    camera.position.z = 105;
+    camera.position.z = 150;
 
     // Renderer
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
@@ -52,7 +52,7 @@ const ThreeJsContainer = ({ filePath }: { filePath: string }) => {
       filePath,
       (gltf) => {
         dragon = gltf.scene;
-        dragon.scale.set(0.5, 0.5, 0.5);
+        dragon.scale.set(10, 10, 10);
         scene.add(dragon);
 
         if (gltf.animations.length > 0) {

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Roboto_Mono } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar';
+import { ScrollSpyProvider } from '@/components/ScrollSpyPrivider';
 
 const roboto = Roboto_Mono({
   subsets: ['latin'],
@@ -20,8 +21,12 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={`${roboto.className} antialiased overflow-x-hidden`}>
-        <Navbar />
-        <div className='p-5 max-w-[1500px] mx-auto'>{children}</div>
+        <ScrollSpyProvider>
+          <div className='fixed'>
+            <Navbar />
+          </div>
+          <div className='p-5 max-w-[1500px] mx-auto'>{children}</div>
+        </ScrollSpyProvider>
       </body>
     </html>
   );
