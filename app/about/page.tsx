@@ -76,7 +76,7 @@ const AboutPage = () => {
                 </div>
               </ReusableCard>
               <div className='mt-10'>
-                <ReusableLink title='See Projects' path='/about/#expertise' />
+                <ReusableLink title='See Projects' path='/about/#projects' />
               </div>
             </div>
           </div>
@@ -159,7 +159,9 @@ const AboutPage = () => {
         <div className='flex flex-col gap-16'>
           {workExperience.map((experience) => (
             <div className='flex gap-20'>
-              <span className='text-mysterious-green'>{experience.date}</span>
+              <span className='text-mysterious-green min-w-[12rem]'>
+                {experience.date}
+              </span>
               <div className='space-y-2'>
                 <div className='font-bold'>
                   {experience.title} - {experience.companyName}
