@@ -3,7 +3,7 @@ import { Roboto_Mono } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import { ScrollSpyProvider } from '@/components/ScrollSpyPrivider';
-
+import { Analytics } from '@vercel/analytics/next';
 const roboto = Roboto_Mono({
   subsets: ['latin'],
 });
@@ -26,6 +26,7 @@ export default function RootLayout({
             <Navbar />
           </div>
           <div className='p-5 max-w-[1500px] mx-auto'>{children}</div>
+          <Analytics />
         </ScrollSpyProvider>
       </body>
     </html>
