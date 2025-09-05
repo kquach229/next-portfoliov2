@@ -4,6 +4,7 @@ import './globals.css';
 import Navbar from '@/components/Navbar';
 import { ScrollSpyProvider } from '@/components/ScrollSpyPrivider';
 import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 const roboto = Roboto_Mono({
   subsets: ['latin'],
 });
@@ -27,6 +28,7 @@ export default function RootLayout({
           </div>
           <div className='p-5 max-w-[1500px] mx-auto'>{children}</div>
           <Analytics />
+          <SpeedInsights />
         </ScrollSpyProvider>
       </body>
     </html>
