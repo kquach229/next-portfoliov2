@@ -135,7 +135,7 @@ export const workExperience = [
     title: 'Head of Engineering',
     description:
       'Built a credit-based purchasing system with real-time balances and transaction history, shipping the MVP in under three weeks and getting 18 users in the first month. Added a PWA for offline support and analytics to track reviews and purchases.',
-    date: 'May 2024 - Jul 2025',
+    date: 'Aug 2024 - Dec 2025',
     tools: ['Nextjs', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'Prisma ORM'],
   },
   {
