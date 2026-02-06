@@ -132,7 +132,7 @@ export const expertiseAndSkills = [
 export const workExperience = [
   {
     companyName: 'ValidateLens',
-    title: 'Head of Engineering',
+    title: 'Application Engineer (Self-Employed)',
     description:
       'Built a credit-based purchasing system with real-time balances and transaction history, shipping the MVP in under three weeks and getting 18 users in the first month. Added a PWA for offline support and analytics to track reviews and purchases.',
     date: 'Aug 2024 - Dec 2025',
@@ -140,7 +140,7 @@ export const workExperience = [
   },
   {
     companyName: 'rue21',
-    title: 'Senior Frontend Engineer',
+    title: 'Lead Frontend Engineer',
     description:
       'Launched a React Native mobile version of our internal inventory tool and improved performance with lazy loading and code splitting, cutting load times by 25%. Optimized components using memoization and the Context API, reducing re-renders by 20%',
     date: 'Feb 2024 - May 2024',
@@ -148,7 +148,7 @@ export const workExperience = [
   },
   {
     companyName: 'Once Upon a Time Hospitality',
-    title: 'Fullstack Engineer',
+    title: 'Application Support Engineer',
     description:
       'Standardized Git processes, cutting environment issues by 25% and saving dev time. Led the move from an in-house CMS to a third-party provider and migrated 10+ client sites from React to Next.js, improving load times by over 20%.',
     date: 'Dec 2022 - Dec 2023',
@@ -166,7 +166,7 @@ export const workExperience = [
   },
   {
     companyName: 'Quadency',
-    title: 'Fullstack Engineer',
+    title: 'Software Engineer',
     description:
       'Built the QuadX trading widget with real-time updates, driving a 25% boost in user engagement. Developed the end-to-end bot fees flow, which increased revenue from trade execution by 15%.',
     date: 'Feb 2021 - Dec 2022',
@@ -182,10 +182,24 @@ export const workExperience = [
   },
   {
     companyName: 'Summitworks Technologies',
-    title: 'System Integrations Engineer',
+    title: 'Software Engineer',
     description:
       'Integrated SAP Concur with Workday to automate expense reporting and HR data sync, using Concur APIs and middleware to cut approval and reimbursement times by 30%.',
     date: 'Jun 2019 - Dec 2020',
     tools: ['SOAP/XML', 'SAP', 'Cassandra DB'],
+  },
+  {
+    companyName: 'Crane AI',
+    title: 'Software Engineer (Intern/Full-Time)',
+    description:
+      'Worked on a client-facing AI tool that detects and prevents fraudulent transactions in real-time, using machine learning models to analyze transaction data and flag suspicious activity, reducing fraud by 20%.',
+    date: 'May 2018 - Jun 2019',
+    tools: [
+      'React Native',
+      'Redux',
+      'Material UI',
+      'Docker',
+      'Python'
+    ],
   },
 ];
