@@ -50,7 +50,7 @@ const AboutPage = () => {
           <div className='space-y-10 mt-5 md:mt-0 w-[100%] md:w-1/2'>
             <div className='text-6xl font-extrabold'>I&apos;m KENNY QUACH</div>
             <div className='space-y-2'>
-              <div className='text-xl'>Fullstack Engineer</div>
+              <div className='text-xl'>Senior Frontend Engineer</div>
               <div className='max-w-[70ch]'>
                 I&apos;ve enjoyed turning designs into fullstack solutions while
                 maintaing code quality and performance. Recently, I have been
