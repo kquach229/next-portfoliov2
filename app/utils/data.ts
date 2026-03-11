@@ -39,6 +39,16 @@ export const projects = [
     technologiesUsed: ['next', 'tailwind', 'typescript', 'tailwind', 'framer-motion'],
     link: 'https://www.therefineryatdomino.com/?utm_source=google&utm_medium=cpc&utm_campaign=Branded%20Terms%20(Maximize%20Clicks)%20-%20Search%20-%20(New%20York%20City%20DMA)&utm_content=The%20Refinery%20at%20Domino&utm_term=the%20refinery%20at%20domino&gad_source=1&gad_campaignid=23516071905&gbraid=0AAAABCuIvK6qqg2HHy_7zrmeCAidbPnHY&gclid=CjwKCAjwpcTNBhA5EiwAdO1S9tkGeKRNk3Hqb7KvCgK_ie8oZR2XGAeM6UjdPgIJkcMrTBrXxr-7ABoCyi0QAvD_BwE',
   },
+    {
+    id: 3,
+    title: 'ValidateLens',
+    image: '/validate-lens.png',
+    description:
+      'Get real human feedback from experienced validators. No AI, no fluff—just actionable insight to help you decide what to build.',
+    date: '08-15-2025',
+    technologiesUsed: ['next', 'tailwind', 'prisma', 'typescript', 'postgres'],
+    link: 'https://validatelens.vercel.app/',
+  },
   {
     id: 1,
     title: 'Quadency',
@@ -64,16 +74,7 @@ export const projects = [
     technologiesUsed: ['next', 'framer-motion', 'tailwind'],
     link: 'https://www.lepetitpali.com/',
   },
-  {
-    id: 3,
-    title: 'ValidateLens',
-    image: '/validate-lens.png',
-    description:
-      'Get real human feedback from experienced validators. No AI, no fluff—just actionable insight to help you decide what to build.',
-    date: '08-15-2025',
-    technologiesUsed: ['next', 'tailwind', 'prisma', 'typescript', 'postgres'],
-    link: 'https://validatelens.vercel.app/',
-  },
+
 
   {
     id: 5,
