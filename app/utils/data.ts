@@ -5,7 +5,7 @@ export const projects = [
     image: '/bernie-robbins.png',
     description:
       'Bernie Robbins is a jewelry company with over 50 years of experience in the industry. They offer a wide range of jewelry products, including engagement rings, wedding bands, and fashion jewelry.',
-    date: '12-01-2022',
+    date: '10-01-203',
     technologiesUsed: ['next', 'tailwind', 'typescript', 'styled-components', 'framer-motion'],
     link: 'https://www.bernierobbins.com/',
   },
@@ -15,7 +15,7 @@ export const projects = [
     image: '/palisociety.png',
     description:
       'A society of unique hotels and residences in Los Angeles, Santa Barbara, Carmel-by-the-Sea, San Francisco, San Diego, Seattle, Portland and beyond.',
-    date: '05-05-2022',
+    date: '05-05-2023',
     technologiesUsed: ['next', 'tailwind', 'typescript', 'tailwind', 'framer-motion'],
     link: 'https://www.palisociety.com/',
   },
