@@ -1,5 +1,45 @@
 export const projects = [
   {
+    id: 9,
+    title: 'Bernie Robbins',
+    image: '/bernie-robbins.png',
+    description:
+      'Bernie Robbins is a jewelry company with over 50 years of experience in the industry. They offer a wide range of jewelry products, including engagement rings, wedding bands, and fashion jewelry.',
+    date: '12-01-2022',
+    technologiesUsed: ['next', 'tailwind', 'typescript', 'styled-components', 'framer-motion'],
+    link: 'https://www.bernierobbins.com/',
+  },
+    {
+    id: 10,
+    title: 'Palisociety',
+    image: '/palisociety.png',
+    description:
+      'A society of unique hotels and residences in Los Angeles, Santa Barbara, Carmel-by-the-Sea, San Francisco, San Diego, Seattle, Portland and beyond.',
+    date: '05-05-2022',
+    technologiesUsed: ['next', 'tailwind', 'typescript', 'tailwind', 'framer-motion'],
+    link: 'https://www.palisociety.com/',
+  },
+      {
+    id: 11,
+    title: 'Arrive Hotels',
+    image: '/arrive-hotels.png',
+    description:
+      'ARRIVE Hotels by Palisociety, boutique hotels in Memphis, Palm Springs, Austin, Wilmington, and Albuquerque.',
+    date: '08-12-2023',
+    technologiesUsed: ['next', 'tailwind', 'typescript', 'tailwind', 'framer-motion'],
+    link: 'https://www.palisociety.com/',
+  },
+        {
+    id: 12,
+    title: 'The Refinery at Domino',
+    image: '/the-refinery.png',
+    description:
+      'Located on the waterfront of Domino Park in Williamsburg, the 19th-century Domino Sugar refinery building has been transformed into 460,000 sq ft of state-of-the-art workspace and event space.',
+    date: '09-12-2023',
+    technologiesUsed: ['next', 'tailwind', 'typescript', 'tailwind', 'framer-motion'],
+    link: 'https://www.therefineryatdomino.com/?utm_source=google&utm_medium=cpc&utm_campaign=Branded%20Terms%20(Maximize%20Clicks)%20-%20Search%20-%20(New%20York%20City%20DMA)&utm_content=The%20Refinery%20at%20Domino&utm_term=the%20refinery%20at%20domino&gad_source=1&gad_campaignid=23516071905&gbraid=0AAAABCuIvK6qqg2HHy_7zrmeCAidbPnHY&gclid=CjwKCAjwpcTNBhA5EiwAdO1S9tkGeKRNk3Hqb7KvCgK_ie8oZR2XGAeM6UjdPgIJkcMrTBrXxr-7ABoCyi0QAvD_BwE',
+  },
+  {
     id: 1,
     title: 'Quadency',
     image: '/quadency.png',
@@ -34,15 +74,7 @@ export const projects = [
     technologiesUsed: ['next', 'tailwind', 'prisma', 'typescript', 'postgres'],
     link: 'https://validatelens.vercel.app/',
   },
-  {
-    id: 4,
-    title: 'SEO Lab',
-    image: '/seo-lab.png',
-    description: 'Starter Homepage Template design for SAAS products.',
-    date: '05-15-2024',
-    technologiesUsed: ['next', 'framer-motion', 'javascript', 'tailwind'],
-    link: 'https://seo-lab.vercel.app/',
-  },
+
   {
     id: 5,
     title: 'Filmnation Entertainments',
@@ -82,6 +114,7 @@ export const projects = [
     technologiesUsed: ['next', 'tailwind', 'typescript', 'material-ui'],
     link: 'https://pokedesk-ten.vercel.app/',
   },
+  
 ];
 
 export const expertiseAndSkills = [
@@ -119,6 +152,7 @@ export const expertiseAndSkills = [
     description:
       'Utilized infrastructure tools throughout career to handle scaling and deployment.',
     technologies: [
+      "AWS Cloud",
       'Docker',
       'Terraform',
       'ChatGPT API',
