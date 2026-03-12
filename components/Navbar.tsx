@@ -12,7 +12,8 @@ const links = [
   { id: 3, title: 'expertise', link: '/about#expertise' },
   { id: 4, title: 'projects', link: '/about#projects' },
   { id: 5, title: 'experience', link: '/about#experience' },
-  { id: 6, title: 'contact', link: '/about#contact' },
+  { id: 6, title: 'certifications', link: '/about#certifications' },
+  { id: 7, title: 'contact', link: '/about#contact' },
 ];
 
 const Navbar = () => {
