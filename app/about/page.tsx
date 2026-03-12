@@ -107,6 +107,8 @@ const AboutPage = () => {
         </div>
       </div>
 
+
+
       <div id='projects' className='mt-20'>
         <div className='text-3xl tracking-tighter mb-5'>Some of My Work</div>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5'>
@@ -119,7 +121,6 @@ const AboutPage = () => {
                     alt={project.title}
                     height={500}
                     width={500}
-                    objectFit='cover'
                     className='w-[100%] h-[300px] object-cover'
                   />
                 </div>
@@ -187,6 +188,27 @@ const AboutPage = () => {
         </div>
       </div>
 
+            {/* Certifications Section */}
+      <div id='certifications' className='mt-20'>
+        <div className='text-3xl tracking-tighter mb-5'>Certifications</div>
+
+
+          <div className='flex flex-col  gap-4'>
+
+           
+            <Image
+              src='/aws-certified-cloud-practitioner.png'
+              alt='AWS Cloud Certified Badge'
+              width={150}
+              height={150}
+            />
+
+          </div>
+
+
+       
+      </div>
+
       <div id='contact' className='mt-20 mb-20'>
         <div className='text-3xl tracking-tighter mb-5'>Contact</div>
 
@@ -200,6 +222,7 @@ const AboutPage = () => {
                 <div className='text-xl font-semibold'>
                   Other Ways to Get In Touch
                 </div>
+
                 <div className='flex flex-col gap-5'>
                   <div>Get A Copy of My Resume</div>
                   <ReusableLink

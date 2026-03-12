@@ -27,7 +27,7 @@ export const projects = [
       'ARRIVE Hotels by Palisociety, boutique hotels in Memphis, Palm Springs, Austin, Wilmington, and Albuquerque.',
     date: '08-12-2023',
     technologiesUsed: ['next', 'tailwind', 'typescript', 'tailwind', 'framer-motion'],
-    link: 'https://www.palisociety.com/',
+    link: 'https://www.arrivehotels.com/',
   },
         {
     id: 12,
