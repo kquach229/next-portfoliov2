@@ -69,7 +69,7 @@ export const projects = [
     image: "/validate-lens.png",
     description:
       "Get real human feedback from experienced validators. No AI, no fluff—just actionable insight to help you decide what to build.",
-    date: "08-15-2025",
+    date: "08-15-2024",
     technologiesUsed: ["next", "tailwind", "prisma", "typescript", "postgres"],
     link: "https://validatelens.vercel.app/",
   },
