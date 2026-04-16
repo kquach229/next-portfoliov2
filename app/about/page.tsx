@@ -113,7 +113,7 @@ const AboutPage = () => {
         <div className="text-3xl tracking-tighter mb-5">Some of My Work</div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
           {projects
-            .sort((a: any, b: any) => b.date - a.date)
+            .sort((a: string, b: string) => b.date - a.date)
             .map((project) => (
               <ReusableCard key={project.id}>
                 <div className="flex flex-col gap-5 justify-between h-full w-full">
