@@ -1,9 +1,9 @@
-import React from 'react';
-import ReusableCard from '@/components/ReusableCard';
-import { expertiseAndSkills, projects, workExperience } from '../utils/data';
-import Link from 'next/link';
-import Image from 'next/image';
-import ReusableLink from '@/components/ReusableLink';
+import React from "react";
+import ReusableCard from "@/components/ReusableCard";
+import { expertiseAndSkills, projects, workExperience } from "../utils/data";
+import Link from "next/link";
+import Image from "next/image";
+import ReusableLink from "@/components/ReusableLink";
 import {
   BrainCogIcon,
   Code,
@@ -12,18 +12,18 @@ import {
   LucideLinkedin,
   MapPin,
   ServerIcon,
-} from 'lucide-react';
-import ReusableBage from '@/components/ReusableBage';
-import ContactForm from '@/components/ContactForm';
-import CopyEmailButton from '@/components/CopyEmailButton';
+} from "lucide-react";
+import ReusableBage from "@/components/ReusableBage";
+import ContactForm from "@/components/ContactForm";
+import CopyEmailButton from "@/components/CopyEmailButton";
 
 const renderSkillTitleIcon = (title: string) => {
   switch (title) {
-    case 'Frontend Dev':
+    case "Frontend Dev":
       return <ComputerIcon />;
-    case 'Backend Dev':
+    case "Backend Dev":
       return <ServerIcon />;
-    case 'Infrastructure & AI':
+    case "Infrastructure & AI":
       return <BrainCogIcon />;
     default:
       return null;
@@ -32,67 +32,69 @@ const renderSkillTitleIcon = (title: string) => {
 
 const AboutPage = () => {
   return (
-    <div className='w-full'>
-      <div id='intro' className='min-h-screen'>
-        <div className='flex flex-col-reverse md:flex-row justify-around items-center min-h-screen gap-10 mt-20 md:mt-0'>
-          <div className='w-[100%] h-auto md:w-1/2 lg:w-1/5'>
+    <div className="w-full">
+      <div id="intro" className="min-h-screen">
+        <div className="flex flex-col-reverse md:flex-row justify-around items-center min-h-screen gap-10 mt-20 md:mt-0">
+          <div className="w-[100%] h-auto md:w-1/2 lg:w-1/5">
             <Image
-              src='/profile.webp'
+              src="/profile.webp"
               priority
-              placeholder='blur'
-              blurDataURL='/blurred-profile.png'
-              alt='image'
+              placeholder="blur"
+              blurDataURL="/blurred-profile.png"
+              alt="image"
               width={500}
               height={500}
-              className='rounded-md w-[100%] h-auto object-cover'
+              className="rounded-md w-[100%] h-auto object-cover"
             />
           </div>
-          <div className='space-y-10 mt-5 md:mt-0 w-[100%] md:w-1/2'>
-            <div className='text-6xl font-extrabold'>I&apos;m KENNY QUACH</div>
-            <div className='space-y-2'>
-              <div className='text-xl'>Senior Frontend Engineer</div>
-              <div className='max-w-[70ch]'>
+          <div className="space-y-10 mt-5 md:mt-0 w-[100%] md:w-1/2">
+            <div className="text-6xl font-extrabold">I&apos;m KENNY QUACH</div>
+            <div className="space-y-2">
+              <div className="text-xl">Senior Frontend Engineer</div>
+              <div className="max-w-[70ch]">
                 I&apos;ve enjoyed turning designs into fullstack solutions while
                 maintaing code quality and performance. Recently, I have been
                 diving deep into AI tools.
               </div>
               <ReusableCard>
-                <div className='flex flex-col space-y-2'>
-                  <span className='inline-flex gap-2'>
+                <div className="flex flex-col space-y-2">
+                  <span className="inline-flex gap-2">
                     <MapPin /> Based in NYC Metropolitan Area
                   </span>
-                  <span className='inline-flex gap-2'>
+                  <span className="inline-flex gap-2">
                     <Code /> 5+ Years of Experience
                   </span>
-                  <span className='inline-flex gap-5'>
+                  <span className="inline-flex gap-5">
                     <Link
-                      href='https://www.linkedin.com/in/kennyquach/'
-                      target='_blank'>
+                      href="https://www.linkedin.com/in/kennyquach/"
+                      target="_blank"
+                    >
                       <LucideLinkedin />
                     </Link>
-                    <Link href='https://github.com/kquach229' target='_blank'>
+                    <Link href="https://github.com/kquach229" target="_blank">
                       <GithubIcon />
                     </Link>
                   </span>
                 </div>
               </ReusableCard>
-              <div className='mt-10'>
-                <ReusableLink title='See Projects' path='/about/#projects' />
+              <div className="mt-10">
+                <ReusableLink title="See Projects" path="/about/#projects" />
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className='mt-20' id='expertise'>
-        <div className='text-3xl tracking-tighter mb-5'>Skills & Expertise</div>
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3'>
+      <div className="mt-20" id="expertise">
+        <div className="text-3xl tracking-tighter mb-5">Skills & Expertise</div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
           {expertiseAndSkills.map((skill) => (
             <div
               key={skill.title}
-              className='border border-mysterious-green space-y-5 p-5'>
+              className="border border-mysterious-green space-y-5 p-5"
+            >
               <div>{renderSkillTitleIcon(skill.title)}</div>
-              <div className='text-2xl font-extrabold inline-flex text-center'>
+              <div className="text-2xl font-extrabold inline-flex text-center">
                 {skill.title}
               </div>
               <div>{skill.description}</div>
@@ -107,77 +109,78 @@ const AboutPage = () => {
         </div>
       </div>
 
+      <div id="projects" className="mt-20">
+        <div className="text-3xl tracking-tighter mb-5">Some of My Work</div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
+          {projects
+            .sort((a, b) => b.date - a.date)
+            .map((project) => (
+              <ReusableCard key={project.id}>
+                <div className="flex flex-col gap-5 justify-between h-full w-full">
+                  <div className="rounded-md w-full">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      height={500}
+                      width={500}
+                      className="w-[100%] h-[300px] object-cover"
+                    />
+                  </div>
 
+                  <div className="flex items-center gap-3">
+                    {project.technologiesUsed?.map((technology) => (
+                      <Image
+                        key={technology}
+                        src={`/${technology}.svg`}
+                        width={35}
+                        height={35}
+                        alt={technology}
+                      />
+                    ))}
+                  </div>
 
-      <div id='projects' className='mt-20'>
-        <div className='text-3xl tracking-tighter mb-5'>Some of My Work</div>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5'>
-          {projects.map((project) => (
-            <ReusableCard key={project.id}>
-              <div className='flex flex-col gap-5 justify-between h-full w-full'>
-                <div className='rounded-md w-full'>
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    height={500}
-                    width={500}
-                    className='w-[100%] h-[300px] object-cover'
+                  <div className="space-y-5">
+                    <div className="flex justify-between">
+                      <span className="font-bold">{project.title}</span>
+                      <span>{project.date}</span>
+                    </div>
+                    <div>{project.description}</div>
+                  </div>
+
+                  <ReusableLink
+                    title={`Visit ${project.title}`}
+                    path={`${project.link}`}
+                    openNewTab={true}
                   />
                 </div>
-
-                <div className='flex items-center gap-3'>
-                  {project.technologiesUsed?.map((technology) => (
-                    <Image
-                      key={technology}
-                      src={`/${technology}.svg`}
-                      width={35}
-                      height={35}
-                      alt={technology}
-                    />
-                  ))}
-                </div>
-
-                <div className='space-y-5'>
-                  <div className='flex justify-between'>
-                    <span className='font-bold'>{project.title}</span>
-                    <span>{project.date}</span>
-                  </div>
-                  <div>{project.description}</div>
-                </div>
-
-                <ReusableLink
-                  title={`Visit ${project.title}`}
-                  path={`${project.link}`}
-                  openNewTab={true}
-                />
-              </div>
-            </ReusableCard>
-          ))}
+              </ReusableCard>
+            ))}
         </div>
       </div>
 
-      <div id='experience' className='mt-20 mb-20'>
-        <div className='text-3xl tracking-tighter mb-5'>Experience</div>
-        <div className='flex flex-col gap-16'>
+      <div id="experience" className="mt-20 mb-20">
+        <div className="text-3xl tracking-tighter mb-5">Experience</div>
+        <div className="flex flex-col gap-16">
           {workExperience.map((experience) => (
             <div
               key={experience.companyName}
-              className='flex flex-col md:flex-row md:gap-20'>
-              <span className='text-mysterious-green min-w-[12rem] font-semibold'>
+              className="flex flex-col md:flex-row md:gap-20"
+            >
+              <span className="text-mysterious-green min-w-[12rem] font-semibold">
                 {experience.date}
               </span>
-              <div className='space-y-2'>
-                <div className='font-bold'>
+              <div className="space-y-2">
+                <div className="font-bold">
                   {experience.title} - {experience.companyName}
                 </div>
-                <div className='text-sm text-foreground/70'>
+                <div className="text-sm text-foreground/70">
                   {experience.description}
                 </div>
-                <div className='flex gap-2 text-sm flex-wrap'>
+                <div className="flex gap-2 text-sm flex-wrap">
                   {experience.tools.map((tool) => (
                     <ReusableBage
                       key={tool}
-                      styles={{ fontSize: '0.8rem' }}
+                      styles={{ fontSize: "0.8rem" }}
                       title={tool}
                     />
                   ))}
@@ -188,65 +191,59 @@ const AboutPage = () => {
         </div>
       </div>
 
-            {/* Certifications Section */}
-      <div id='certifications' className='mt-20'>
-        <div className='text-3xl tracking-tighter mb-5'>Certifications</div>
+      {/* Certifications Section */}
+      <div id="certifications" className="mt-20">
+        <div className="text-3xl tracking-tighter mb-5">Certifications</div>
 
-
-          <div className='flex flex-col  gap-4'>
-
-           
-            <Image
-              src='/aws-certified-cloud-practitioner.png'
-              alt='AWS Cloud Certified Badge'
-              width={150}
-              height={150}
-            />
-
-          </div>
-
-
-       
+        <div className="flex flex-col  gap-4">
+          <Image
+            src="/aws-certified-cloud-practitioner.png"
+            alt="AWS Cloud Certified Badge"
+            width={150}
+            height={150}
+          />
+        </div>
       </div>
 
-      <div id='contact' className='mt-20 mb-20'>
-        <div className='text-3xl tracking-tighter mb-5'>Contact</div>
+      <div id="contact" className="mt-20 mb-20">
+        <div className="text-3xl tracking-tighter mb-5">Contact</div>
 
-        <div className='flex flex-col sm:flex-row sm:justify-between gap-12 w-full'>
-          <div className='mx-auto w-full sm:w-1/2'>
+        <div className="flex flex-col sm:flex-row sm:justify-between gap-12 w-full">
+          <div className="mx-auto w-full sm:w-1/2">
             <ContactForm />
           </div>
-          <div className='w-full sm:w-1/2'>
-            <ReusableCard styles={{ width: '100%' }}>
-              <div className='flex flex-col space-y-5 w-full'>
-                <div className='text-xl font-semibold'>
+          <div className="w-full sm:w-1/2">
+            <ReusableCard styles={{ width: "100%" }}>
+              <div className="flex flex-col space-y-5 w-full">
+                <div className="text-xl font-semibold">
                   Other Ways to Get In Touch
                 </div>
 
-                <div className='flex flex-col gap-5'>
+                <div className="flex flex-col gap-5">
                   <div>Get A Copy of My Resume</div>
                   <ReusableLink
-                    title='Download Resume'
-                    path='/resume.pdf'
+                    title="Download Resume"
+                    path="/resume.pdf"
                     download
                   />
                 </div>
 
-                <div className='flex flex-col gap-5'>
+                <div className="flex flex-col gap-5">
                   <div>Copy Email Address</div>
                   <CopyEmailButton />
                 </div>
               </div>
 
-              <div className='space-y-2'>
+              <div className="space-y-2">
                 <div>My Links</div>
-                <div className='flex flex-row gap-10'>
+                <div className="flex flex-row gap-10">
                   <Link
-                    href='https://www.linkedin.com/in/kennyquach/'
-                    target='_blank'>
+                    href="https://www.linkedin.com/in/kennyquach/"
+                    target="_blank"
+                  >
                     Linkedin
                   </Link>
-                  <Link href='https://github.com/kquach229' target='_blank'>
+                  <Link href="https://github.com/kquach229" target="_blank">
                     Github
                   </Link>
                 </div>
