@@ -198,11 +198,11 @@ export const expertiseAndSkills = [
 
 export const workExperience = [
   {
-    companyName: "ValidateLens",
+    companyName: "together.",
     title: "Founding Engineer",
     description:
       "Built a credit-based purchasing system with real-time balances and transaction history, shipping the MVP in under three weeks and getting 18 users in the first month. Added a PWA for offline support and analytics to track reviews and purchases.",
-    date: "Aug 2024 - Dec 2025",
+    date: "Mar 2025 - Apr 2026",
     tools: ["Nextjs", "TypeScript", "Tailwind CSS", "PostgreSQL", "Prisma ORM"],
   },
   {
@@ -236,7 +236,7 @@ export const workExperience = [
     title: "Lead React Developer",
     description:
       "Built the QuadX trading widget with real-time updates, driving a 25% boost in user engagement. Developed the end-to-end bot fees flow, which increased revenue from trade execution by 15%.",
-    date: "Feb 2021 - Dec 2022",
+    date: "Jan 2021 - Dec 2022",
     tools: [
       "JavaScript",
       "React",
