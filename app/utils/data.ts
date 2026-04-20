@@ -140,13 +140,13 @@ export const projects = [
   },
   {
     id: 9,
-    title: "Together",
-    image: "/together.png",
+    title: "Togather",
+    image: "/togather.png",
     description:
       "Create a card for any occasion. Share a link. Watch everyones messages and photos come together in one beautiful place.",
     date: "03-28-2025",
     technologiesUsed: ["next", "tailwind", "typescript", "material-ui", "aws"],
-    link: "https://togethercards.vercel.app/",
+    link: "https://togathercards.com",
   },
 ];
 
@@ -198,7 +198,7 @@ export const expertiseAndSkills = [
 
 export const workExperience = [
   {
-    companyName: "together.",
+    companyName: "togather.",
     title: "Founding Engineer",
     description:
       "Built a credit-based purchasing system with real-time balances and transaction history, shipping the MVP in under three weeks and getting 18 users in the first month. Added a PWA for offline support and analytics to track reviews and purchases.",
