@@ -140,7 +140,7 @@ export const projects = [
   },
   {
     id: 9,
-    title: "Togather",
+    title: "Togather.",
     image: "/togather.png",
     description:
       "Create a card for any occasion. Share a link. Watch everyones messages and photos come together in one beautiful place.",
@@ -198,7 +198,7 @@ export const expertiseAndSkills = [
 
 export const workExperience = [
   {
-    companyName: "togather.",
+    companyName: "Togather.",
     title: "Founding Engineer",
     description:
       "Built a credit-based purchasing system with real-time balances and transaction history, shipping the MVP in under three weeks and getting 18 users in the first month. Added a PWA for offline support and analytics to track reviews and purchases.",
