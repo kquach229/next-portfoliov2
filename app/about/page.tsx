@@ -16,6 +16,7 @@ import {
 import ReusableBage from "@/components/ReusableBage";
 import ContactForm from "@/components/ContactForm";
 import CopyEmailButton from "@/components/CopyEmailButton";
+import RecruiterAsk from "@/components/RecruiterAsk";
 
 const renderSkillTitleIcon = (title: string) => {
   switch (title) {
@@ -85,6 +86,9 @@ const AboutPage = () => {
         </div>
       </div>
 
+
+
+
       <div className="mt-20" id="expertise">
         <div className="text-3xl tracking-tighter mb-5">Skills & Expertise</div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
@@ -130,9 +134,9 @@ const AboutPage = () => {
                   </div>
 
                   <div className="flex items-center gap-3">
-                    {project.technologiesUsed?.map((technology) => (
+                    {project.technologiesUsed?.map((technology, index) => (
                       <Image
-                        key={technology}
+                        key={`${technology}-${index}`}
                         src={`/${technology}.svg`}
                         width={35}
                         height={35}
@@ -191,6 +195,20 @@ const AboutPage = () => {
             </div>
           ))}
         </div>
+      </div>
+
+
+
+
+
+      <div className="relative">
+      <div id="hire-qa" className=" mt-20  mx-auto md:mx-0">
+              <div className="flex items-center gap-2 text-3xl tracking-tighter mb-5">
+                Recruiters Ask
+                <Image src="/bard.png" alt="AI Assistant" width={30} height={30} />
+              </div>
+              <RecruiterAsk />
+            </div>
       </div>
 
       {/* Certifications Section */}
