@@ -38,47 +38,41 @@ export default function RecruiterAsk() {
   };
 
   return (
-   
-      <div className="space-y-4">
-        <div className="text-xl tracking-tighter font-extrabold text-foreground/50">
-          Ask About Kenny's Experience
-        </div>
-        <p className="text-sm text-foreground/80 max-w-[70ch]">
-          Ask factual questions sourced from this portfolio—for example years of
-          experience, main tech stack, recent employers, or project highlights.
-        </p>
-
-        <form onSubmit={handleSubmit} className="space-y-3">
-          <textarea
-            placeholder="e.g. What is Kenny&apos;s main tech stack? Where has he worked most recently?"
-            className="w-full border border-mysterious-green p-3 rounded focus:outline-none min-h-[6rem] text-sm resize-y bg-transparent"
-            value={question}
-            onChange={(e) => setQuestion(e.target.value)}
-            maxLength={600}
-            required
-            disabled={pending}
-            rows={10}
-            aria-label="Question for hiring assistant"
-          />
-          <div className="flex flex-wrap items-center gap-3">
-            <ReusableButton
-              type="submit"
-              title="Get answer"
-              disabled={pending}
-            />
-            {pending && <ClipLoader size={22} />}
-          </div>
-        </form>
-
-        {error && (
-          <p className="text-sm text-red-600 dark:text-red-400">{error}</p>
-        )}
-        {answer && (
-          <div className="rounded border border-mysterious-green/50 p-3 text-sm whitespace-pre-wrap leading-relaxed">
-            {answer}
-          </div>
-        )}
+    <div className="space-y-4">
+      <div className="text-xl tracking-tighter font-extrabold text-foreground/50">
+        Ask About Kenny&apos;s Experience
       </div>
+      <p className="text-sm text-foreground/80 max-w-[70ch]">
+        Ask factual questions sourced from this portfolio—for example years of
+        experience, main tech stack, recent employers, or project highlights.
+      </p>
 
+      <form onSubmit={handleSubmit} className="space-y-3">
+        <textarea
+          placeholder="e.g. What is Kenny's main tech stack? Where has he worked most recently?"
+          className="w-full border border-mysterious-green p-3 rounded focus:outline-none min-h-[6rem] text-sm resize-y bg-transparent"
+          value={question}
+          onChange={(e) => setQuestion(e.target.value)}
+          maxLength={600}
+          required
+          disabled={pending}
+          rows={10}
+          aria-label="Question for hiring assistant"
+        />
+        <div className="flex flex-wrap items-center gap-3">
+          <ReusableButton type="submit" title="Get answer" disabled={pending} />
+          {pending && <ClipLoader size={22} />}
+        </div>
+      </form>
+
+      {error && (
+        <p className="text-sm text-red-600 dark:text-red-400">{error}</p>
+      )}
+      {answer && (
+        <div className="rounded border border-mysterious-green/50 p-3 text-sm whitespace-pre-wrap leading-relaxed">
+          {answer}
+        </div>
+      )}
+    </div>
   );
 }
