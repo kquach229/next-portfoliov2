@@ -8,7 +8,7 @@ const ReusableCard = ({
   styles?: React.CSSProperties;
 }) => {
   return (
-    <div style={styles ?? {}} className='bg-mysterious-green/30 rounded-sm'>
+    <div style={styles ? styles : {}}  className='bg-mysterious-green/30 rounded-sm'>
       <div className='p-5 h-[100%] mx-auto'>{children}</div>
     </div>
   );

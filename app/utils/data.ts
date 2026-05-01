@@ -1,6 +1,6 @@
 export const projects = [
   {
-    id: 9,
+    id: 19,
     title: "Bernie Robbins",
     image: "/bernie-robbins.png",
     description:
