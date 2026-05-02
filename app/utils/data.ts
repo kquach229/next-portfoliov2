@@ -192,6 +192,10 @@ export const expertiseAndSkills = [
       "Google Gemini API",
       "Vercel",
       "Heroku",
+      "LLM",
+      "OpenAI",
+      "Claude Code",
+      "Cursor",
     ],
   },
 ];
