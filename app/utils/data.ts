@@ -222,7 +222,7 @@ export const workExperience = [
     title: "Senior Frontend Software Engineer",
     description:
       "Standardized Git processes, cutting environment issues by 25% and saving dev time. Led the move from an in-house CMS to a third-party provider and migrated 10+ client sites from React to Next.js, improving load times by over 20%.",
-    date: "Dec 2022 - Feb 2024",
+    date: "Dec 2022 - Jan 2024",
     tools: [
       "JavaScript",
       "SCSS",
