@@ -194,6 +194,8 @@ const AboutPage = () => {
         </div>
       </div>
 
+      {/* Retrigger Deploy */}
+
       <div className="relative">
         <div id="ask" className=" mt-20  mx-auto md:mx-0">
           <div className="flex items-center gap-2 text-3xl tracking-tighter mb-5">
