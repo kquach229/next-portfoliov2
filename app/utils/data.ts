@@ -164,6 +164,7 @@ export const expertiseAndSkills = [
       "Zustand/Redux",
       "Shadcn UI",
       "Tailwind CSS",
+      "Playwright",
       "Jest",
     ],
   },
@@ -178,6 +179,7 @@ export const expertiseAndSkills = [
       "Restful APIs",
       "Prisma ORM",
       "Python",
+      "Postman",
     ],
   },
   {
@@ -187,11 +189,9 @@ export const expertiseAndSkills = [
     technologies: [
       "AWS Cloud",
       "Docker",
-      "Terraform",
       "ChatGPT API",
       "Google Gemini API",
       "Vercel",
-      "Heroku",
       "LLM",
       "OpenAI",
       "Claude Code",
