@@ -196,6 +196,7 @@ export const expertiseAndSkills = [
       "OpenAI",
       "Claude Code",
       "Cursor",
+      "Github Actions",
     ],
   },
 ];
