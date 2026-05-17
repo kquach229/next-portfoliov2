@@ -35,7 +35,7 @@ ${experienceBlock}
 Selected projects:
 ${projectsBlock}
 
-Certifications: AWS Certified Cloud Practitioner (shown on portfolio with badge).
+Certifications: AWS Certified Cloud Practitioner and Google IT Support Professional Certificate (bothshown on portfolio with badge).
 
 Contact: Portfolio includes a contact form, resume download at /resume.pdf, and LinkedIn/GitHub.
 `.trim();

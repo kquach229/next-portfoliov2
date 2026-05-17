@@ -210,12 +210,19 @@ const AboutPage = () => {
       <div id="certifications" className="mt-20">
         <div className="text-3xl tracking-tighter mb-5">Certifications</div>
 
-        <div className="flex flex-col  gap-4">
+        <div className="flex flex-wrap gap-8 items-center">
           <Image
             src="/aws-certified-cloud-practitioner.png"
             alt="AWS Cloud Certified Badge"
             width={150}
             height={150}
+          />
+
+          <Image
+            src="/google-it-support.png"
+            alt="Google IT Support Professional Badge"
+            width={160}
+            height={160}
           />
         </div>
       </div>
